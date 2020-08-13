@@ -7,6 +7,8 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CustomerRepository extends ElasticsearchRepository<Customer, String> {
+public interface CustomerRepository extends ElasticsearchRepository<Customer, String>, CustomerRepo {
     Page<Customer> findByFirstName(String firstName, Pageable pageable);
+
+    Page<Customer> findByAuthorsName(String name, Pageable pageable);
 }
