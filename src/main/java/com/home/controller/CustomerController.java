@@ -9,11 +9,14 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.core.SearchHits;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 import static java.util.Arrays.asList;
+import static org.springframework.http.ResponseEntity.noContent;
+import static org.springframework.http.ResponseEntity.notFound;
 
 @RestController
 @RequestMapping("customers")
@@ -64,4 +67,12 @@ public class CustomerController {
         return customerRepository.findAll();
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> delete(@PathVariable String id) {
+        if (customerRepository.existsById(id)) {
+            customerRepository.deleteById(id);
+            return noContent().build();
+        }
+        return notFound().build();
+    }
 }
