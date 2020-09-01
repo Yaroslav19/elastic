@@ -1,4 +1,4 @@
-package com.home.config;
+package com.yaro.config;
 
 import org.elasticsearch.client.RestHighLevelClient;
 import org.springframework.context.annotation.Bean;

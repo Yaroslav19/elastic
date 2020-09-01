@@ -1,4 +1,4 @@
-package com.home;
+package com.yaro;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.home.domain.dto;
+package com.yaro.domain.dto;
 
 import lombok.Value;
 

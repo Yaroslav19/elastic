@@ -1,6 +1,6 @@
-package com.home.repository;
+package com.yaro.repository;
 
-import com.home.domain.Customer;
+import com.yaro.domain.Customer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;

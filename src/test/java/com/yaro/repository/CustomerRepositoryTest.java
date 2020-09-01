@@ -1,7 +1,7 @@
-package com.home.repository;
+package com.yaro.repository;
 
-import com.home.domain.Author;
-import com.home.domain.Customer;
+import com.yaro.domain.Author;
+import com.yaro.domain.Customer;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
 import org.junit.FixMethodOrder;

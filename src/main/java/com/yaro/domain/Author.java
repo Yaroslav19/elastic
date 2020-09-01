@@ -1,4 +1,4 @@
-package com.home.domain;
+package com.yaro.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

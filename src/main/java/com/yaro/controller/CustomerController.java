@@ -1,9 +1,9 @@
-package com.home.controller;
+package com.yaro.controller;
 
-import com.home.domain.Author;
-import com.home.domain.Customer;
-import com.home.domain.dto.CustomerUpdate;
-import com.home.repository.CustomerRepository;
+import com.yaro.domain.Author;
+import com.yaro.domain.Customer;
+import com.yaro.domain.dto.CustomerUpdate;
+import com.yaro.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

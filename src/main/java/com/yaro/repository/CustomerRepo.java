@@ -1,7 +1,7 @@
-package com.home.repository;
+package com.yaro.repository;
 
-import com.home.domain.Customer;
-import com.home.domain.dto.CustomerUpdate;
+import com.yaro.domain.Customer;
+import com.yaro.domain.dto.CustomerUpdate;
 import org.springframework.data.elasticsearch.core.SearchHits;
 
 public interface CustomerRepo {
